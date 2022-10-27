@@ -1,4 +1,4 @@
-name: Verify Format
+name: Verify Lint
 
 on: pull_request
 

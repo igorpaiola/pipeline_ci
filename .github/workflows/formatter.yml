@@ -21,7 +21,7 @@ jobs:
           path: deps
           key: ${{ runner.os }}-${{ matrix.otp }}-${{ matrix.elixir }}-mix-${{ hashFiles(format('{0}{1}', github.workspace, '/mix.lock')) }}
       - name: Install Mix Dependencies
-        if: steps.mix-cache-format.outputs.cache-hit ≠ 'true'
+        if: steps.mix-cache-format.outputs.cache-hit != 'true'
         run: mix deps.get
       - name: ===> FORMAT
         run: mix format --check-formatted

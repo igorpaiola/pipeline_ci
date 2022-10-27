@@ -3,7 +3,7 @@ name: Verify Security
 on: pull_request
 
 jobs:
-  check_format:
+  security:
     runs-on: ubuntu-latest
     strategy:
       matrix:

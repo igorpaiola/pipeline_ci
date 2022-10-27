@@ -3,7 +3,7 @@ name: Verify Test
 on: pull_request
 
 jobs:
-  lint:
+  coverage:
     runs-on: ubuntu-latest
     strategy:
       matrix:
